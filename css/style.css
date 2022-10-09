@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+  font-family: 'Druk Bold 2';
+  src: url(../Fonts/Druk-Bold-2.otf);
+}
+@font-face {
+  font-family: 'AcuminVariableConcept';
+  src: url(../Fonts/AcuminVariableConcept.otf);
+}
+@font-face {
+  font-family: '2XU Sharpie 02';
+  src: url(../Fonts/2XU_Sharpie_02.otf);
+}
+@font-face {
+  font-family: 'Spray Letters';
+  src: url(../Fonts/Spray\ Letters.otf);
+}
+:root {
+  --themeBlack: #1C1714;
+  --themeYellow: #FFBF1F;
+  --themeWhite: #FCFAF1;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow: hidden;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+.contentContainer {
+  background-color: var(--themeBlack);
+}
+.customNav {
+  background-color: var(--themeYellow);
+  padding: 0 !important;
+  text-transform: uppercase !important;
+}
+.customNav .dropdown-toggle {
+  height: 65px !important;
+}
+.customNav .dropdown-toggle::after {
+  display: none !important;
+}
+.customNav .nav-item.dropdown {
+  max-width: 160px !important;
+  background-color: var(--themeBlack);
+} 
+.customNav .nav-item > a {
+  color: var(--themeBlack) !important;
+font-family: 'Druk Bold 2';
+font-size: 1.5em;
+padding: 0.6em;
+opacity: unset !important;
+}
+.customNav .nav-item.dropdown > a{
+  color: var(--themeWhite) !important;
+  padding: 0.4em 0.8em;
+  display: inline-block;
+  line-height: 1.7;
+}
+.customNav .navbar-nav {
+  margin-right: 150px;
+}
+.customNav .dropdown-menu {
+  background-color: var(--themeBlack) !important;
+  padding: 0;
+}
+.customNav .dropdown-menu > li {
+  border-top: 1px solid var(--themeYellow);
+  font-size: 0.8em;
+  text-align: center;
+}
+.customNav .dropdown-menu > li a {
+  font-size: 1em;
+  padding: 0.5em !important;
+  display: block;
+  color: var(--themeWhite);
+}
+.customNav .dropdown-item:hover,
+.customNav .dropdown-menu > li:nth-child(3), 
+.customNav .dropdown-menu > li:nth-child(3) a  {
+  background-color: var(--themeYellow);
+  color: var(--themeBlack);
+}
+
+.customNav .dropdown-menu[data-bs-popper] {
+  min-width: unset !important;
+  width: 100% !important;
+  top: 97% !important;
+}
+
+/* HERO SECTION */
+.heroSection {
+  padding-top: 10em;
+  min-height: calc(100vh - 65px);
+  background-image: url(../img/heroBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.brandsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4em 0;
+}
+.brandsContainer > div:not(:last-child) {
+  margin-right: 50px;
+}
+.brandHeading,
+.letterHeading {
+  font-family: 'Druk Bold 2';
+  font-size: 1.2em;
+  color: var(--themeWhite);
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+/* CATEGORY AND FEE SECTION */
+.categorySection {
+  padding: 5em;
+}
+.headingContainer {
+  text-align: center;
+  color: var(--themeWhite);
+}
+.headingContainer > img:nth-child(1) {
+  margin-bottom: 0.5em;
+}
+.headingContainer > img:last-child {
+  margin-top: -0.3em;
+}
+.mainHeading {
+  font-family: 'Druk Bold 2';
+  font-size: 6em;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+.mainHeading.odd {
+  font-size: 4em;
+}
+.headingContainer p{
+  font-size: 2em;
+}
+.fee {
+  color: var(--themeYellow);
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+.itemsList > .item {
+  margin-top: 0.4em;
+}
+.itemsList > .item > span {
+  color: var(--themeWhite);
+  font-size: 1.2em;
+  margin-left: 0.7em;
+}
+.row > .col-lg-3.bordered {
+  position: relative;
+}
+.row > .col-lg-3.bordered:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+  width: 5px;
+  height: 100%;
+  background-color: #FCFAF1;
+}
+
+/* WAVE SECTION */
+.waveSection {
+  padding: 10em 0 5em 0;
+  background-image: url(../img/waveSecBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.raceHeadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainHeading.race {
+  margin: 0 0.4em;
+  color: var(--themeBlack);
+}
+.tableContainer {
+  position: relative;
+  padding: 2em;
+  text-align: center;
+}
+.cycleImg {
+  width: 26%;
+  position: absolute;
+  bottom: -26%;
+  right: 0;
+}
+.raceContentContainer {
+  padding-top: 20em;
+}
+.title{
+  font-family: '2XU Sharpie 02';
+  font-size: 1.5em;
+}
+.imgContainer {
+  height: 300px;
+  margin-bottom: 1em;
+}
+.raceContentContainer .btn.customized {
+  margin-top: 1em;
+}
+.raceContentContainer .btn.customized img{
+ height: 100%;
+}
+.stopwatch {
+  height: unset !important;
+}
+
+/* COMING SOON SECTION */
+.comingSoonSection {
+  padding: 10em 0;
+}
+.comingSoonSection > .container > .bannerContainer .banner {
+  margin-top: 5em;
+}
+.comingSoonSection > .container >.bannerContainer:not(:first-child) {
+  margin-top: 15em;
+}
+.mapContainer{
+  margin-top: 5em !important;
+  position: relative;
+  max-width: 1188px;
+  margin: auto;
+  padding: 2em;
+}
+.mapContainer .row{
+  position: relative;
+}
+.mapContainer {
+  font-size: 1em;
+  font-weight: 600;
+}
+.letterBg {
+  position: absolute;
+  z-index: 0;
+}
+.letterHeading {
+  font-size: 2.5em;
+  color: var(--themeBlack);
+  margin-top: 1em;
+}
+.map {
+  padding-left: 4em;
+  padding-top: 2em;
+}
+.realMap {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+/* ASKWD QUESTIONS SECTION */
+.askedQueSection {
+  margin-top: 15em;
+}
+.questionTabs {
+  margin-top: 2em;
+}
+.questionTabs .nav-tabs .nav-link > img {
+  display: none;
+  position: absolute;
+  width: 80%;
+}
+.questionTabs .nav-tabs .nav-link > img:first-child {
+top: -3px;
+}
+.questionTabs .nav-tabs .nav-link > img:last-child {
+  bottom: -8px !important;
+}
+.questionTabs .nav-tabs .nav-link.active > img {
+  display: block;
+}
+.questionTabs .nav-tabs .nav-link {
+  color: var(--themeWhite);
+  font-family: 'Druk Bold 2';
+  font-size: 3em;
+  line-height: 0.5;
+  position: relative;
+  border: 0 !important;
+}
+.questionTabs .nav-tabs .nav-link.active {
+  background-color: transparent !important;
+  color: var(--themeYellow);
+}
+/* ACCORDIAN */
+.questionAcordian {
+  margin-top: 2em;
+}
+.questionAcordian .accordion-item {
+  background-color: unset !important;
+}
+.questionAcordian .accordion-item {
+  border-bottom: 2px solid var(--themeYellow);
+}
+.questionAcordian .accordion-header {
+  background-color: unset !important;
+}
+.questionAcordian .accordion-button,
+.secHeading {
+  box-shadow: unset !important;
+  background-color: unset !important;
+  color: var(--themeWhite);
+  font-size: 2.5em;
+  font-family: 'Druk Bold 2';
+}
+.questionAcordian .accordion-body {
+  padding: 1em 0 1em 5.7em;
+  color: var(--themeWhite);
+  font-size: 1.1em;
+}
+.questionAcordian .accordion-button::after {
+  display: none !important;
+}
+
+.contactContainer {
+  padding: 3em 0;
+}
+.contactContainer p {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: var(--themeWhite);
+}
+.contactContainer p span{
+  color: var(--themeYellow);
+}
+.vLine {
+  font-weight: 900;
+  font-size: 2em;
+}
+.customCard {
+  font-size: 0.9em;
+}
+.customCard > p{
+ font-size: 1.2em;
+}
+.customCard > a{
+  color: var(--themeYellow) !important;
+}
+.aboutContainer h3{
+  color: var(--themeYellow);
+  font-size: 2em;
+  font-family: 'Druk Bold 2';
+  margin-bottom: 0.4em;
+}
+.aboutContainer p {
+  font-size: 1.3em;
+  color: var(--themeWhite);
+}
+
+/* SPONSER FOOTER */
+.sponsorSec {
+  padding: 8em 0;
+}
+.subHeading{
+  color: var(--themeWhite);
+  font-size: 3em;
+  font-family: 'Druk Bold 2';
+  text-transform: uppercase;
+}
+/* MODALS */
+.btn-close.customized {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-image: unset;
+}
+
+/* MERCHANDISE PAGE */
+.navbar.customNav.merchandiseNav {
+  background-color: var(--themeBlack);
+}
+.navbar.customNav.merchandiseNav .nav-link {
+  color: var(--themeWhite) !important;
+}
+.merchandiseSection {
+  min-height: calc(100vh - 65px);
+  padding: 3em 0;
+  background-color: var(--themeYellow);;
+}
+.merchandiseSection .subHeading {
+  color: var(--themeBlack);
+}
+
+
+/* MEDIA QUIRIES */
+/* EXTRA LARGE */
+@media only screen and (max-width: 1400px){
+  body {
+    font-size: 0.9em !important;
+  }
+}
+/* LARGE */
+@media only screen and (max-width: 992px){
+  body {
+    font-size: 0.8em !important;
+  }
+  .customNav .navbar-nav {
+    margin-right: 0;
+  }
+  .row > .col-lg-3.bordered:nth-child(2)::after {
+    display: none !important;
+  }
+  .mapContainer {
+    background-color: var(--themeWhite);
+  }
+  .mapContainer img{
+    display: none !important;
+  }
+  .realMap{
+    width: 80% !important;
+    height: 280px !important;
+  }
+  .navbar-nav {
+    align-items: unset !important;
+  }
+  .customNav .dropdown-toggle {
+    height: unset !important;
+  }
+  .customNav .nav-item {
+    margin-bottom: 0.4em;
+    }
+  .customNav .nav-item.dropdown {
+    max-width: 100% !important;
+  }
+  .headingContainer {
+    line-height: 3;
+  }
+  .headingContainer > img{
+    width: 70%;
+    margin: auto;
+  }
+  .askedQueSection {
+    margin-top: 5em;
+  }
+  .mainHeading {
+    text-align: center !important;
+    font-size: 3em;
+  }
+  .raceHeadingContainer > img {
+    width: 25%;
+  }
+  
+}
+
+/* MEDIUM */
+@media only screen and (max-width: 768px){
+  body {
+    font-size: 0.7em !important;
+  }
+  .questionTabs {
+    font-size: 0.8em !important;
+  }
+  .tabHeading {
+    font-size: 0.8em !important;
+  }
+  .questionTabs .nav-link.active img {
+    width: 80%;
+    margin: auto;
+  }
+  .row > .col-lg-3.bordered::after {
+    display: none !important;
+  }
+  .map {
+    padding: 0;
+  }
+  .brandsContainer > div {
+    width: 100%;
+  }
+  .brandsContainer > div > .brandHeading {
+    margin-right: 4em;
+  }
+  .brandsContainer {
+    justify-content: unset;
+    text-align: left !important;
+    padding-left: 4em;
+  }
+}
+
+/* SMALL */
+@media  only screen and (max-width: 576px) {
+  .questionTabs {
+    font-size: 0.6em !important;
+  }
+  .questionTabs .nav-link.active img {
+    width: 60%;
+    margin: auto;
+  }
+}
